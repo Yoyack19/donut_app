@@ -1,3 +1,8 @@
+import 'package:donut_app/tab/burger_tab.dart';
+import 'package:donut_app/tab/donut_tab.dart';
+import 'package:donut_app/tab/pancakes_tab.dart';
+import 'package:donut_app/tab/pizza_tab.dart';
+import 'package:donut_app/tab/smoothie_tab.dart';
 import 'package:donut_app/utils/my_tab.dart';
 import 'package:flutter/material.dart';
 
@@ -91,16 +96,15 @@ class _HomePageState extends State<HomePage> {
               indicatorWeight: 3, // Grosor del indicador
             ),
 
-            // 3. Contenido de las pestañas (aquí irá tu TabBarView)
             Expanded(
               child: TabBarView(
                 children: [
                   // Aquí van los contenidos de cada pestaña
-                  Container(), // Donuts
-                  Container(), // Burgers
-                  Container(), // Smoothies
-                  Container(), // Pancakes
-                  Container(), // Pizzas
+                  DonutTab(), // Donuts
+                  BurgerTab(), // Burgers
+                  SmoothieTab(), // Smoothies
+                  PancakesTab(), // Pancakes
+                  PizzaTab(), // Pizzas
                 ],
               ),
             ),
