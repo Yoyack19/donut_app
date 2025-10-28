@@ -26,7 +26,7 @@ final List listadedonas = [
         //NUmero de columnas
         crossAxisCount: 2,
 
-        childAspectRatio: 1 / 1.4,
+        childAspectRatio: 1 / 1.45,
         ),
         //cuantos elmentos tendra
         itemCount: listadedonas.length,
