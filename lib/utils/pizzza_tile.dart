@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DonutTile extends StatelessWidget {
+class PizzaTile extends StatelessWidget {
   final String sabordona;
   final String preciodona;
   final dynamic colordona;
   final String imagename;
   final String proveedordonas;
 
-  const DonutTile({super.key, required this.sabordona, required this.preciodona, required this.colordona, required this.imagename, required this.proveedordonas});
+  const PizzaTile({super.key, required this.sabordona, required this.preciodona, required this.colordona, required this.imagename, required this.proveedordonas});
 
 
 

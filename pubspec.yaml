@@ -61,7 +61,10 @@ flutter:
   assets:
   - lib/images/
   - lib/icons/
-
+  - lib/ImagesSmoothies/
+  - lib/ImagesBurger/
+  - lib/ImagesPancake/
+  - lib/ImagesPizza/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

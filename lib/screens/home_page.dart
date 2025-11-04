@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
               labelColor: Colors.black, // Color cuando está seleccionado
               unselectedLabelColor: Colors.grey, // Color cuando no está seleccionado
               indicatorColor: Colors.black, // Color del indicador
-              indicatorWeight: 3, // Grosor del indicador
+              indicatorWeight: 2, // Grosor del indicador
             ),
 
             Expanded(

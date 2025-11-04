@@ -9,12 +9,13 @@ final List listadedonas = [
   
   //sabordona, preciodona, colordona, imagename, proovedordonas
   ['Chocolate', '100', Colors.brown, "lib/images/chocolate_donut.png", "Starbuks"],
-  ['Chocolate', '89', Colors.purple, "lib/images/grape_donut.png", "Starbuks"],
-  ['Chocolate', '120', Colors.pink, "lib/images/icecream_donut.png", "DonkeyDonuts"],
-  ['Chocolate', '100', Colors.red, "lib/images/strawberry_donut.png", "Krispy Kreme"]
-
-
-
+  ['Uva', '89', Colors.purple, "lib/images/grape_donut.png", "Starbuks"],
+  ['Helado', '120', Colors.pink, "lib/images/icecream_donut.png", "DonkeyDonuts"],
+  ['Fresa', '100', Colors.red, "lib/images/strawberry_donut.png", "Krispy Kreme"],
+  ['Canela', '100', Colors.brown, "lib/images/chocolate_donut.png", "Starbuks"],
+  ['Arandano', '89', Colors.purple, "lib/images/grape_donut.png", "Starbuks"],
+  ['Ceresa', '120', Colors.pink, "lib/images/icecream_donut.png", "DonkeyDonuts"],
+  ['Chicle', '100', Colors.red, "lib/images/strawberry_donut.png", "Krispy Kreme"]
 
 ];
 
