@@ -2,7 +2,8 @@ import 'package:donut_app/utils/donut_tile.dart';
 import 'package:flutter/material.dart';
 
 class DonutTab extends StatelessWidget {
-   DonutTab({super.key});
+  final Function(double) onAdd; // recibe la funcion
+  DonutTab({super.key, required this.onAdd});
 //Lista de donas
 
 final List listadedonas = [
@@ -39,7 +40,7 @@ final List listadedonas = [
             colordona: listadedonas[index][2],
             imagename: listadedonas[index][3],
             proveedordonas: listadedonas[index][4],
-
+            onAdd: onAdd, //pasa a funcio a cada tile
           );
         }
       );

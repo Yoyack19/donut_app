@@ -2,7 +2,8 @@ import 'package:donut_app/utils/burger_tile.dart';
 import 'package:flutter/material.dart';
 
 class BurgerTab extends StatelessWidget {
-  BurgerTab({super.key});
+  final Function(double) onAdd;
+  BurgerTab({super.key, required this.onAdd});
 
 final List listadedonas = [
   
@@ -38,6 +39,7 @@ final List listadedonas = [
             colordona: listadedonas[index][2],
             imagename: listadedonas[index][3],
             proveedordonas: listadedonas[index][4],
+            onAdd: onAdd,
 
           );
         }

@@ -14,6 +14,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  //Funcion para actualizar el carrito
+  int itemCount = 0;
+  double totalPrice = 0;
+
   List<Widget> myTabs = [
     // Donut Tab
     const MyTab(
@@ -41,6 +46,16 @@ class _HomePageState extends State<HomePage> {
       tabName: 'Pizzas',
     ),
   ];
+
+//funcion para actualizar carrrito desde cualquier tab
+  void addToCart(double price){
+    setState(() {
+      itemCount++;
+      totalPrice += price;
+  });
+
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -100,11 +115,11 @@ class _HomePageState extends State<HomePage> {
               child: TabBarView(
                 children: [
                   // Aquí van los contenidos de cada pestaña
-                  DonutTab(), // Donuts
-                  BurgerTab(), // Burgers
-                  SmoothieTab(), // Smoothies
-                  PancakesTab(), // Pancakes
-                  PizzaTab(), // Pizzas
+                  DonutTab(onAdd: addToCart), // Donuts
+                  BurgerTab(onAdd: addToCart), // Burgers
+                  SmoothieTab(onAdd: addToCart), // Smoothies
+                  PancakesTab(onAdd: addToCart,), // Pancakes
+                  PizzaTab(onAdd: addToCart), // Pizzas
                 ],
               ),
             ),
@@ -120,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                   child: Column( 
                     crossAxisAlignment: CrossAxisAlignment.start, //pegar a la izquierda
                     children: [
-                    Text('2 Itmes | \$45', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold), 
+                    Text('$itemCount Items | \$${totalPrice.toStringAsFixed(2)}', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold), 
                           
                     ),
                     Text('Delivery Charges Included', style: TextStyle(fontSize: 12)),

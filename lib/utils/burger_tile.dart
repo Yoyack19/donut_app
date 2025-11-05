@@ -6,8 +6,8 @@ class BurgerTile extends StatelessWidget {
   final dynamic colordona;
   final String imagename;
   final String proveedordonas;
-
-  const BurgerTile({super.key, required this.sabordona, required this.preciodona, required this.colordona, required this.imagename, required this.proveedordonas});
+  final Function(double) onAdd;
+  const BurgerTile({super.key, required this.sabordona, required this.preciodona, required this.colordona, required this.imagename, required this.proveedordonas, required this.onAdd});
 
 
 
@@ -62,7 +62,10 @@ class BurgerTile extends StatelessWidget {
                          Icon(Icons.favorite, color: Colors.pink[400]),
                         
                          TextButton(
-                           onPressed: () {},
+                           onPressed: () {
+                            final price = double.tryParse(preciodona) ?? 0;
+                            onAdd(price);
+                           },
                            child: Text('Add',
                              style: TextStyle( fontWeight: FontWeight.bold, color: Colors.black, decoration: TextDecoration.underline
                              ),

@@ -2,7 +2,8 @@ import 'package:donut_app/utils/pancakes_tile.dart';
 import 'package:flutter/material.dart';
 
 class PancakesTab extends StatelessWidget {
-  PancakesTab({super.key});
+  final Function(double) onAdd;
+  PancakesTab({super.key, required this.onAdd});
 
 
 final List listadedonas = [
@@ -40,6 +41,7 @@ final List listadedonas = [
             colordona: listadedonas[index][2],
             imagename: listadedonas[index][3],
             proveedordonas: listadedonas[index][4],
+            onAdd: onAdd,
 
           );
         }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:donut_app/utils/pizzza_tile.dart';
 class PizzaTab extends StatelessWidget {
-  PizzaTab({super.key});
+  final Function(double) onAdd;
+  PizzaTab({super.key, required this.onAdd});
 
 final List listadedonas = [
   
@@ -36,7 +37,7 @@ final List listadedonas = [
             colordona: listadedonas[index][2],
             imagename: listadedonas[index][3],
             proveedordonas: listadedonas[index][4],
-
+            onAdd: onAdd,
           );
         }
       );
