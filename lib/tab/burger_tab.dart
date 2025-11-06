@@ -8,14 +8,14 @@ class BurgerTab extends StatelessWidget {
 final List listadedonas = [
   
   //sabordona, preciodona, colordona, imagename, proovedordonas
-  ['Doble', '100', Colors.brown, "lib/ImagesBurger/doble.png", "Starbuks"],
-  ['Huevo', '89', Colors.yellow, "lib/ImagesBurger/egg.png", "Starbuks"],
-  ['Serie Black', '120', Colors.red, "lib/ImagesBurger/nigga.png", "DonkeyDonuts"],
-  ['Pitaya', '100', Colors.red, "lib/ImagesBurger/pitahaya.png", "Krispy Kreme"],
-  ['Regular', '100', Colors.brown, "lib/ImagesBurger/single.png", "Starbuks"],
-  ['Ultimate', '89', Colors.brown, "lib/ImagesBurger/ultimate.png", "Starbuks"],
-  ['Arrachera', '120', Colors.red, "lib/ImagesBurger/doble.png", "DonkeyDonuts"],
-  ['Pollo', '100', Colors.yellow, "lib/ImagesBurger/single.png", "Krispy Kreme"]
+  ['Thor', '100', Colors.brown, "lib/ImagesBurger/gato.png", "Petco"],
+  ['Kiity', '89', Colors.yellow, "lib/ImagesBurger/gato.png", "Patitas felices"],
+  ['Atena', '120', Colors.red, "lib/ImagesBurger/gato.png", "Petco"],
+  ['Tita', '100', Colors.red, "lib/ImagesBurger/gato.png", "Animal save"],
+  ['Chew', '100', Colors.brown, "lib/ImagesBurger/gato.png", "Gatilocos"],
+  ['Pancho', '89', Colors.brown, "lib/ImagesBurger/gato.png", "Gatilocos"],
+  ['Bandido', '120', Colors.red, "lib/ImagesBurger/gato.png", "Animal save"],
+  ['Tigre', '100', Colors.yellow, "lib/ImagesBurger/gato.png", "Patitas felices"]
 
 ];
 
